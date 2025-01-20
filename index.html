@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Video Streamer</title>
+<style>
+    body{
+        margin: 40px auto;
+        max-width: 650px;
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+
+    <video id ="videoPlayer " width="650" controls muted="unmuted" autoplay>
+        <source src="/video" type = "video/mp4"/>
+    </video>
+    <script> 
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.muted = false; 
+    });
+
+    </script>
+
+</body>
+</html> 
